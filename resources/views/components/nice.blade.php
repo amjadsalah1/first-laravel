@@ -1,0 +1,1 @@
+Welcome nice component class
