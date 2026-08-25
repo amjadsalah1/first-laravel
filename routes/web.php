@@ -315,17 +315,21 @@ use Illuminate\Support\Facades\Route;
 
 
 // personal website route
-Route::get('/', [PersonalController::class, 'index'])->name('personal.index');
+// Route::get('/', [PersonalController::class, 'index'])->name('personal.index');
 
-Route::get('/resume', [PersonalController::class, 'resume'])->name('personal.resume');
+// Route::get('/resume', [PersonalController::class, 'resume'])->name('personal.resume');
 
-Route::get('/projects', [PersonalController::class, 'projects'])->name('personal.projects');
+// Route::get('/projects', [PersonalController::class, 'projects'])->name('personal.projects');
 
-Route::get('/contact-us', [PersonalController::class, 'contact'])->name('personal.contact');
+// Route::get('/contact-us', [PersonalController::class, 'contact'])->name('personal.contact');
 
 Route::get('/index', [PersonalController::class, 'index'])->name('personal.index');
 
 
 
 // Sprylo website route
-// Route::get('/', [SpryloController::class,  'index'])->name('sprylo.index');
+Route::get('/', [SpryloController::class, 'index'])->name('index');
+Route::get('cart',[SpryloController::class, 'cart'])->name('cart');
+Route::get('contact',[SpryloController::class, 'contact'])->name('contact');
+Route::get('product',[SpryloController::class, 'product'])->name('product');
+
